@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     font-family: 'DM Sans', sans-serif;
+     background-color: #f5f5f5;
+     display: grid;
+     place-items: center;
+}
+
+.grid-container{
+     padding: 40px;
+     display: grid;
+     gap: 30px;
+     grid-template-areas: 
+          'create social social schedule '
+          'create manage maintain schedule'
+          'write manage maintain schedule'
+          'write faster grow grow';
+          max-width: 1200px;
+     
+}
+
+.social-grid{
+     grid-area: social;
+     background-color: hsl(256, 67%, 59%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     border-radius: 10px;
+     padding: 40px;
+}
+
+.social-grid h2{
+     color: white;
+     font-size: 50px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     margin-bottom: 20px;
+}
+
+.social-grid span{
+     color: hsl(39, 100%, 71%);
+}
+
+.social-grid img{
+     width: 25%;
+     height: auto;
+}
+
+.social-grid p{
+     color: white;
+     font-size: 16px;
+     font-weight: 400;
+     margin-top: 10px;
+}
+
+.manage-grid{
+     grid-area: manage;
+     background-color: hsl(0, 0%, 100%);
+     border-radius: 10px;
+      padding: 20px;
+}
+
+.manage-grid h2{
+     color: hsl(0, 0%, 7%);
+     font-size: 40px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+     padding: 20px;
+
+}
+.manage-grid img{
+     width: 100%;
+     height: auto;
+     
+}
+.maintain-grid{
+     grid-area: maintain;
+     background-color: hsl(39, 100%, 71%);
+     border-radius: 10px;
+     display: grid;
+     align-content: space-between;
+     padding: 15px 15px 0 15px;
+}
+
+
+.maintain-grid h2{
+     color: hsl(0, 0%, 7%);
+     font-size: 40px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+     padding-bottom: 20px;
+}
+
+.maintain-grid img{
+     width: 100%;
+     height: auto;
+}
+
+
+.schedule-grid{
+     grid-area: schedule;
+     background-color: hsl(254, 88%, 90%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     padding: 20px 0 20px 20px;
+     border-radius: 10px;
+}
+
+.schedule-grid img{
+     width: 100%;
+     height: 350px;
+}
+
+.schedule-grid h2{
+     color: hsl(0, 0%, 7%);
+     font-size: 30px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+     
+}
+
+.grow-grid{
+     grid-area: grow;
+     background-color:hsl(256, 67%, 59%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     padding: 20px;
+     border-radius: 10px;
+}
+
+.grow-grid h2{
+     color: hsl(0, 0%, 100%);
+     font-size: 30px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+}
+
+.grow-grid img{
+     width: 100%;
+     height: 230px;
+}
+
+
+.faster-grid{
+     grid-area: faster;
+     background-color: hsl(0, 0%, 100%);
+     gap: 20px;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     border-radius: 10px;
+}
+
+.faster-grid p:first-child{
+     font-size: 60px;
+}
+.faster-grid p:last-child{
+     color: hsl(0, 0%, 7%);
+     font-size: 45px;
+     font-weight: 400;
+}
+
+.faster-grid img{
+     margin-top: 30px;
+     width: 100%;
+     height: auto;
+}
+
+.create-grid{
+     grid-area: create;
+     background-color: hsl(31, 66%, 93%);
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     border-radius: 10px;
+     align-content: center;
+}
+
+.create-grid h2{
+     color: hsl(0, 0%, 7%);
+     font-size: 40px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+}
+.create-grid span{
+     color: hsl(256, 67%, 59%);
+}
+.create-grid img{
+     margin-top: 20px;
+     width: 100%;
+     height: auto;
+}
+
+.write-grid{
+     grid-area: write;
+     background-color: hsl(39, 100%, 71%);
+     padding: 20px;
+     border-radius: 10px;
+     display: grid;
+     align-content: space-between;
+}
+
+.write-grid h2{
+     color: hsl(0, 0%, 7%);
+     font-size: 40px;
+     font-weight: 400;
+     font-family: 'DM Sans', sans-serif;
+     line-height: 1;
+
+}
+
+.write-grid img{
+     width: 100%;
+     height: auto;
+}
+
+.attribution{
+     text-align: center;
+     margin-top: 20px;
+}
+
+
+@media (max-width: 375px) {
+     .grid-container{
+          grid-template-areas: 
+               'social'
+               'manage'
+               'maintain'
+               'schedule'
+               'grow'
+               'faster'
+               'create'
+               'write';
+     }
+
+     .create-grid img,.write-grid img,.faster-grid img,.grow-grid img,.maintain-grid img{
+          width: 50%;
+     }
+     .social-grid img{
+          width: 100%;
+     }
+
+     .social-grid h2{
+          font-size: 40px;
+          line-height: 1;
+     }
+
+     .manage-grid h2{
+          font-size: 25px;
+     }
+
+     .maintain-grid h2{
+          font-size: 25px;
+     }
+
+     .schedule-grid{
+          padding: 20px;
+     }
+
+     .grow-grid{
+          display: flex;
+          flex-direction: column;
+     }
+
+     .grow-grid h2{
+          text-align: center;
+          font-size: 30px;
+     }
+
+     .faster-grid p:first-child{
+          font-size: 30px;
+     }
+
+     .faster-grid img{
+          margin-top: 0;
+     }
+     .create-grid h2{
+          font-size: 25px;
+     }
+
+     .write-grid h2{
+          font-size: 25px;
+          margin-bottom: 10px;
+     }
+
+
+}
