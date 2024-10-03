@@ -1,6 +1,6 @@
 # Frontend Mentor - Bento grid
 
-![Design preview for the Bento grid coding challenge](bento-grid-main/desktop-design.jpg)
+![Design preview for the Bento grid coding challenge](bento-grid-main/design/desktop-design.jpg)
 
 ## Welcome! 👋
 
